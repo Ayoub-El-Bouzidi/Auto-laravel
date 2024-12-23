@@ -28,3 +28,15 @@ Route::get('/editor', function () {
     return 'Editor Dashboard';
 })->middleware('role:editor');
 
+Route::get('/dashboard', function () {
+    return 'Bienvenue sur le tableau de bord.';
+})->middleware('permission:view dashboard');
+
+Route::get('/manage', function () {
+    return 'Gestion des ressources.';
+})->middleware('permission:view dashboard,manage resources');
+
+
+Route::get('/admin', function () {
+    return 'Bienvenue sur la page admin.';
+})->middleware('role:admin');
