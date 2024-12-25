@@ -9,7 +9,7 @@
         "@popperjs/core": "^2.11.6",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
-        "bootstrap": "^5.2.3",
+        "bootstrap": "^5.3.3",
         "concurrently": "^9.0.1",
         "husky": "^9.1.7",
         "laravel-vite-plugin": "^1.0",
@@ -19,7 +19,7 @@
         "vite": "^6.0"
     },
     "dependencies": {
-        "admin-lte": "^4.0.0-beta3",
+        "admin-lte": "^3.2.0",
         "jquery": "^3.7.1",
         "popper.js": "^1.16.1"
     }

@@ -48,14 +48,25 @@
             <div class="sidebar">
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+                        <!-- Dashboard Link -->
+                       
+                
+                        <!-- Categories Section -->
                         <li class="nav-item">
-                            <a href="" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>Dashboard</p>
+                            <a href="{{ route('category.create') }}" class="nav-link">
+                                <i class="nav-icon fas fa-plus-circle"></i>
+                                <p>Create Category</p>
                             </a>
                         </li>
-                    </ul>
+                        <!-- Article Section -->
+                        <li class="nav-item">
+                            <a href="{{ route('article.create') }}" class="nav-link">
+                                <i class="nav-icon fas fa-plus-circle"></i>
+                                <p>Create Article</p>
+                            </a>
+                        </li>
                 </nav>
+                
             </div>
         </aside>
 
