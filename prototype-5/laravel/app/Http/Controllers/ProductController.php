@@ -17,16 +17,16 @@ class ProductController extends Controller
     public function index()
     {
         $products = $this->productRepository->getAllProduct();
-        return view('dashboard',compact('products'));
+        return view('admin.products',compact('products'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    // public function create()
-    // {
-    //     $use
-    // }
+    public function create()
+    {
+        return view('admin.create');
+    }
 
     /**
      * Store a newly created resource in storage.

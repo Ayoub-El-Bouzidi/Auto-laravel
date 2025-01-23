@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Product;
 use App\Policies\ProductPolicy;
 use App\Repositories\ProductRepository;
+use App\Repositories\ProductRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -12,9 +13,9 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
-    public function register(): void
+    public function register()
     {
-        $this->app->bind(ProductRepository::class , ProductRepository::class);
+        $this->app->bind(ProductRepositoryInterface::class , ProductRepository::class);
     }
 
     /**
